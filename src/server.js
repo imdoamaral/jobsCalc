@@ -1,14 +1,18 @@
 // chama o pacote 'express'
 // e o armazena em uma constante
 const express = require('express')
+const routes = require('./routes')
+const path = require('path')
 
 // executa a constante/função 'express'
 // e armazena seu retorno
 const server = express()
 
+// usando a template engine
 server.set('view engine', 'ejs')
 
-const routes = require('./routes')
+// mudando a localizacao da pasta views
+server.set('views', path.join(__dirname, 'views'))
 
 // executa a propriedade/função .listen
 // que esta disponivel em 'server'
