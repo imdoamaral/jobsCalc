@@ -35,3 +35,14 @@
 - OBS: o EJS busca as rotas na pasta `/views` do diretório RAIZ
 
 # Componentizar os elementos
+
+# Banco de Dados"
+
+`$ npm install sqlite3`
+`$ npm install sqlite`
+
+- Criar pasta `db` em `/src`
+- Criar `config.js` dentro de `/db`
+- Criar `init.js` dentro de `/db`
+- Criar script `init-db` em `package.json`
+- `sudo apt install beekeeper-studio`
